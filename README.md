@@ -66,8 +66,6 @@ app/ct_scan_model.h5                CT classifier       (25 MB)
 app/models/histopathology_model.h5  Histology classifier (40 MB)
 notebooks/ct-scan-cnn.ipynb         CT training and evaluation
 notebooks/histopathology-cnn.ipynb  Histology training and evaluation
-docs/ABSTRACT.pdf                   Project abstract
-docs/FINAL_REVIEW_PPT.pptx          Final review presentation
 ```
 
 ## Running it
