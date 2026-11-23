@@ -1,0 +1,27 @@
+# Datasets - download from source, see README
+Data/
+rawData/
+data/
+*.zip
+
+# Large media (demo recordings, background video)
+*.mp4
+*.avi
+*.mov
+
+# Runtime upload scratch
+app/temp/
+app/uploads/
+app/static/videos/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
