@@ -48,10 +48,8 @@ Flask serves three templates and loads both Keras models at startup.
 ## Layout
 
 ```
-app/app.py                          Flask application, both models
+app/app.py                          Flask application, loads both models
 app/templates/                      index, ct_scan, histo_image
-app/ct_scan_model.h5                CT classifier        (25 MB)
-app/models/histopathology_model.h5  Histology classifier (40 MB)
 notebooks/ct-scan-cnn.ipynb         CT training and evaluation
 notebooks/histopathology-cnn.ipynb  Histology training and evaluation
 ```
@@ -64,7 +62,9 @@ pip install flask tensorflow pillow numpy
 python app.py
 ```
 
-Both trained models are committed, so the application runs without retraining.
+The trained weights are not distributed. Run both notebooks against the
+datasets below to produce `app/ct_scan_model.h5` and
+`app/models/histopathology_model.h5`, then start the application.
 
 ## Datasets
 
